@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,97px);
+            grid-template-rows: repeat(5,100px);
+            grid-template-areas: 
+            "box1 box2 box2"
+            "box3 box2 box2"
+            "box4 box5 box6"
+            "box7 box8 box9"
+            "box10 box10 box10";
+        }
+        .box{
+            background-color: rgb(255, 185, 34);
+            color: white;
+            margin: 5px;
+        }
+        .box1{
+            grid-area: box1;
+            opacity: 0.5;
+        }
+        .box2{
+            grid-area: box2;
+        }
+        .box3{
+            grid-area: box3;
+            opacity: 0.5;
+        }
+        .box4{
+            grid-area: box4;
+        }
+        .box5{
+            grid-area: box5;
+            opacity: 0.5;
+        }
+        .box6{
+            grid-area: box6;
+        }
+        .box7{
+            grid-area: box7;
+            opacity: 0.5;
+        }
+        .box8{
+            grid-area: box8;
+        }
+        .box9{
+            grid-area: box9;
+            opacity: 0.5;
+        }
+        .box10{
+            grid-area: box10;
+        }
+        
+    </style>
+<body>
+    <div id="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+    </div>
+</body>
+</html>

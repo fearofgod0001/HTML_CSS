@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>변환효과</title>
+    <style>
+        /* div{
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            background-color: red;
+            transition: all 2s .3s ease;
+            
+        }
+        div:hover{
+            transform: translate(100px,200px);
+            transition-timing-function: cubic-bezier(0.94,-0.33,0,0.95);
+            transform: scale3d(2,2,2);
+            transform: skew(30deg, -100deg);
+            transform: rotate(150deg);
+        } */
+
+        .container{
+            border: 1px solid black;
+            display: inline-block;
+            margin: 20px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box:hover{
+            transform: rotate(30deg); /* 오른쪽으로 30도 회전 */
+            transform-origin: top left; /* 왼쪽 위 모서리 기준 */
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!--
+        좌표 이동 하기
+    -->
+    <div></div>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

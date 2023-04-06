@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+
+        .grid-container{
+            margin: 20px;
+            width: calc(100vw-20px);
+            display: grid;
+            /* grid-template-columns: 2fr 1fr 1fr; */
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+            grid-template-areas: 
+                "header header header"
+                "sidebar content content"
+                "footer footer footer";
+            row-gap: 2px;
+            column-gap: 2px;
+           
+        }
+        .grid-item{
+            color: white;
+            background-color: orangered;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #header{
+            grid-area:header;
+            background-color: royalblue;
+            background-image: url(/0317/header.jpg);
+            background-size: cover;
+
+        }
+        #sidebar{
+            grid-area: sidebar;
+            background-color: orange;
+        }
+        #content{
+            grid-area: content;
+        }
+        #footer{
+            grid-area:footer;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div id="header" class="grid-item">Header 영역</div>
+        <div id="sidebar" class="grid-item">사이드바 영역</div>
+        <div id="content" class="grid-item">컨텐츠 영역</div>
+        <div id="footer" class="grid-item">푸터 영역</div>
+
+    </div>
+</body>
+</html>

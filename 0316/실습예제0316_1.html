@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+        .container{
+            width: 304px;
+            height: 390px;
+            border: 1px solid black;
+            text-align: center;
+          
+        }
+        .google{
+            margin-top: 28px;
+            width: 228px;
+            height: 44px;
+            border:1px solid black;
+            font-family: 'Roboto';
+            font-weight: bolder;
+            color:#504444;
+            line-height: 40px;
+            font-size: 14px;
+            
+          
+        }
+        .google2{
+            margin-top: 15px;
+            width: 228px;
+            height: 44px;
+            border:1px solid black;
+            font-family: 'Roboto';
+            font-weight: bolder;
+            color:#504444;
+            line-height: 40px;
+            font-size: 16px;
+        }
+        #username{
+            margin-top: 15px;
+            width: 228px;
+            height: 44px;
+            font-family: 'Roboto';
+
+        }
+        #password{
+           margin-top: 15px;
+            width: 228px;
+            height: 44px;
+            font-family: 'Roboto';
+        }
+        #login{
+            margin-top: 15px;
+            width: 228px;
+            height: 44px;
+            background-color: #373F3c;
+            color: white;
+            font-size: 14px;
+        }
+        #forget{
+            margin-top: 15px;
+            width: 228px;
+            height: 44px;
+            outline-style: none;
+            border: 0;
+            outline: 0;
+            background-color: white;
+        }
+      
+    </style>
+</head>
+<body>
+    <fieldset class="container">
+        <div class="google"> <i class="fa-brands fa-google"></i> Log in with Google</div>
+        <div class="google2"> <i class="fa-brands fa-google"></i> Log in with Google</div>
+        <label for="username">
+            <input type="text" id="username" placeholder="Username">
+        </label>
+        <label for="password">
+            <input type="text" id="password" placeholder="Password">
+        </label>
+
+        <label for="login"> 
+            <button type="submit" id="login">LOGIN</button>
+        </label>
+       
+        <label for="forget"> 
+            <button type="submit" id="forget">Forget your password?</button>
+        </label>
+    </fieldset>
+</body>
+</html>

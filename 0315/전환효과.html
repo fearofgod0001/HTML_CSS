@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .red-box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: all, 2s, ease, 1s;
+
+        }
+        .red-box:hover{
+            background-color: blue;
+            width: 500px;
+        }
+        .red-box:nth-child(1){
+            transition-timing-function: linear;
+        }
+        .red-box:nth-child(2){
+            transition-timing-function: ease;
+        }
+        .red-box:nth-child(3){
+            transition-timing-function: ease-in;
+        }
+        .red-box:nth-child(4){
+            transition-timing-function: ease-out;
+        }
+        .red-box:nth-child(5){
+            transition-timing-function: cubic-bezier(0.94,-0.33,0,0.95);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        요소의 속성이 변경 될 때 부드럽게 변경되는 효과를 제공
+    -->
+    <div class="red-box">liner</div>
+    <div class="red-box">ease</div>
+    <div class="red-box">ease-in</div>
+    <div class="red-box">ease-out</div>
+    <div class="red-box">ease-in-out</div>
+
+</body>
+</html>

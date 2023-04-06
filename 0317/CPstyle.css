@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Russo+One&display=swap');
+body{
+    margin: 0 auto;
+    color: black;
+}
+.container{
+    color: white;
+    justify-content: center;
+    align-content: center;
+}
+/* 헤드 */
+header{
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  height: 200px;
+  background: url(/0317/header.jpg);
+  background-size: cover;              
+}
+header > h1 {          
+  font-family: 'Racing Sans One', cursive;
+  text-shadow: 2px 2px 2px rgb(93, 187, 212);
+  font-size: 70px;
+  align-items: center;
+  justify-content: center;
+  animation-name: colorCg;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  transition: all, 0.5s, ease, 0.2s;
+}
+h1:hover{
+  display: flex;
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes colorCg {
+    0%{color:white;}
+    25%{color:rgb(20, 245, 0);}
+    50%{color:rgb(255, 0, 242);}
+    100%{color:rgb(0, 0, 0);}
+}
+/* 네비 */
+nav{
+  background-color: #fff;
+  align-items: center;
+  justify-content: center; 
+  display: flex;
+}
+nav >a{
+  font-family: 'Racing Sans One', cursive;
+  font-weight: bolder;
+  font-size: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 2px ;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all, 0.5s, ease, 0.3s;
+}
+nav >a:hover{
+  background-color: rgb(20, 245, 0);
+  color: #fff;
+  width: 1000px;
+  font-size: 27px;
+  animation-name: colorCg;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+/* 아티클 */
+article{
+  background : url(/0317/afterlife.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(239, 236, 7);
+  display: flex;
+  height: 1000px;
+}
+.section{
+  margin: 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.568);
+  border: 3px solid white;
+  border-radius: 10px;
+  flex-grow: 1;     
+}
+.section > div{
+  display: flex;
+  margin:20px;
+  height: 200px;
+}
+.section > div > h2 > a{
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: rgba(23, 236, 87, 0.541);
+  transform: skewX(-30deg);
+  box-shadow: 4px 4px 5px rgb(255, 0, 221);
+  font-style: italic;
+  line-height: 150%;              
+}    
+/* 사이드 메뉴 */            
+aside{
+  margin:5px;
+  width: 200px;
+  background-color: rgba(104, 34, 89, 0.61);
+  color: rgb(255, 255, 255);
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.contents {
+  margin: 20px;
+}
+.contents > a{
+  font-family: 'Racing Sans One', cursive;
+  color: rgb(20, 245, 0);
+  font-size: 110%;
+  text-decoration: none;
+  transition: all, 0.1s, ease, 0.1s;
+}
+.contents > a:hover{
+  font-size: 140%;
+  background-color: rgb(93, 187, 212);
+  color: rgb(239, 236, 7);
+   
+}
+.contents >h2{          
+  color: black;
+  background-color: rgba(0, 255, 42, 0.459);
+  font-family: 'Racing Sans One', cursive;
+  font-size: 150%;
+}
+
+/* 푸터 하단 */
+footer{
+  background: url(/0317/wallpaper.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid rgb(46, 16, 128);
+  background-color: white;
+  height: 90px;
+  color: rgb(46, 16, 128,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;      
+}
+footer >div{
+  margin: 20px;
+  text-align:justify
+}
+
+/* 외 이미지 */
+.image1{
+  width: 120%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  
+  transform: skewX(14deg) translateX(-16px)
+}
+.user{  
+   
+    margin: 10px 0px 10px 20px;
+    border: 5px solid #0bff2b;
+    box-shadow: 4px 4px 10px rgb(255, 0, 255);
+    overflow: hidden; /* 찾아보기 */
+    transform: skewX(-14deg);
+    border-radius: 10%;
+    
+  }
+hr{
+  margin: 20px;
+}
+
+#username{
+  border: none;
+  background-color: rgb(235, 142, 29);
+  width: 104px;
+}
+#pwd{
+  border: none;
+  width: 104px;
+}
+#info1{
+  margin-top: 5px;
+  width: 316px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  resize: none;
+    
+}
+.button1{
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(46, 16, 128);
+  font-weight: bolder;
+}
+.comment{
+  margin: 10px;
+}
+
+.comments{
+  margin: auto;
+  font-size: 12px;
+  line-height: 120%;
+  background-color: rgba(23, 236, 87, 0.541);
+  box-shadow:2px 2px 2px #fff;
+  transition: 1s,0.2s ease-in-out;
+}
+
+.comments:hover{
+  float: left;
+  background-color: rgba(0, 0, 0,0.8);
+  display: block;
+  z-index: 1;
+  font-size: 130%;
+  justify-content: center;
+  line-height: 130%;
+}

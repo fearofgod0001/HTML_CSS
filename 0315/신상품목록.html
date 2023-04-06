@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>신상품목록</title>
+<style>
+    h1{
+        text-align: center;
+    }
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        margin: 10px;
+        float: left;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    img{
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        float: left;
+    }
+    li .caption{
+        position: absolute;
+        left: -200px;
+        width: 300px;
+        height: 180px;
+        padding-top: 20px;
+        background-color: rgba(0,0,0,.5);
+        opacity: 0;
+        color: white;
+        text-align: center;
+        transition: 1s,0.2s ease-in-out;
+   
+    }
+    li:hover .caption{
+        opacity: 1;
+        transform: translateX(200px);
+
+    }
+    
+</style>
+</head>
+
+<body>
+
+<div id="container">
+    <h1>신상품 목록</h1>
+    <ul>
+        <li>
+            <img src="/images/prod1.jpg" alt="상품1">
+            <div class="caption">
+                <h2>상품 1</h2>
+                <p>상품1 설명 텍스트</p>
+                <p>가격 : 11,234원</p>
+            </div>
+        </li>
+
+        <li>
+            <img src="/images/prod2.jpg" alt="상품2">
+            <div class="caption">
+                <h2>상품 2</h2>
+                <p>상품2 설명 텍스트</p>
+                <p>가격 : 120,234원</p>
+        </li>
+
+        <li>
+            <img src="/images/prod3.jpg" alt="상품3"> <div class="caption">
+                <h2>상품 3</h2>
+                <p>상품3 설명 텍스트</p>
+                <p>가격 : 30,234원</p>
+
+        </li>
+    </ul>
+</div>
+
+
+</body>
+</html>

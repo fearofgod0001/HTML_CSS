@@ -1,0 +1,39 @@
+<html>
+    
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+    <body>
+<div>
+    <p class="content" id="content1">문단1</p>
+    <p class="content" id="content2">문단2</p>
+    <p class="content" id="content3">문단3</p>
+</div>
+
+<button onclick="changeContent1();">내용변경</button>
+<button onclick="changeContent2();">색상변경</button>
+<button onclick="changeContent3();" id="jquerybtn">이벤트처리</button>
+
+<script>
+
+    function changeContent1(){
+       var text=document.querySelector('#content1');
+       text.innerText="문단1이 변경되었습니다";
+    }
+       
+    function changeContent2(){
+        var text = document.querySelector('#content2');
+            text.style.color='red';
+    }
+
+    function changeContent3(){
+        $("#jquerybtn").click(function(){
+            let text = $('#content3').html();
+            console.log(text);
+        });
+    }
+</script>
+
+​    </body>
+</html>
